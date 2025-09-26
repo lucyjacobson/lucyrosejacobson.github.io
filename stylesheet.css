@@ -47,39 +47,31 @@ html, body {
 }
 
 .nav-links a:hover {
-  color: #000;
+  color: #144668;
 }
 
 .hamburger {
-  display: none;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 25px;
-  height: 22px;
+  display: none !important; /* Hidden by default */
   background: transparent;
   border: none;
   cursor: pointer;
   z-index: 10001;
+  font-size: 28px;
+  color: #2D7EB4;
+  padding: 5px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
 }
 
-.hamburger-line {
-  width: 100%;
-  height: 3px;
-  background-color: #2D7EB4;
-  border-radius: 2px;
-  transition: all 0.3s linear;
+.hamburger:hover {
+  background: transparent !important;
+  color: #144668;
 }
 
-.hamburger.open .hamburger-line:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-  background-color: white;
-}
-.hamburger.open .hamburger-line:nth-child(2) {
-  opacity: 0;
-}
-.hamburger.open .hamburger-line:nth-child(3) {
-  transform: rotate(-45deg) translate(5px, -5px);
-  background-color: white;
+.hamburger.open {
+  color: white;
 }
 
 .mobile-menu-overlay {
@@ -94,17 +86,15 @@ html, body {
   justify-content: center;
   align-items: center;
   z-index: 10000;
-
   opacity: 0;
   transform: translateX(100%); 
   pointer-events: none;
-
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .mobile-menu-overlay.active {
   opacity: 1;
-  transform: translateX(0); /* slide to fully visible */
+  transform: translateX(0);
   pointer-events: auto;
 }
 
@@ -118,10 +108,11 @@ html, body {
 
 .mobile-nav a {
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 200;
   color: white;
   text-decoration: none;
 }
+
 
 .index-bio {
   width: 65%;
@@ -187,7 +178,8 @@ html, body {
 .project-name {
   margin-top: 16px;
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 400;
+  color: #2D7EB4;
 }
 
 .project-link {
@@ -466,10 +458,195 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
 .project-nav-btn:hover,
 .project-nav-btn:hover .project-nav-descriptor,
 .project-nav-btn:hover .project-nav-name {
-    color: #000;
+    color: #144668;
 }
 
+
+/* CONTACT */
+
+#formMessage {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    z-index: 1000;
+    text-align: center;
+    max-width: 300px;
+    width: 90%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    
+    /* Remove it from the form flow completely */
+    position: fixed !important;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 80px auto;
+}
+
+h1 {
+  font-size: 2.7rem;
+  margin-bottom: 10px;
+  font-weight: 800;
+  line-height: 4rem;
+}
+
+.contact-intro {
+  font-size: 1rem;
+  font-weight: 100;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+input,
+textarea {
+  border: 1.3px solid #2D7EB4; 
+  background: transparent;
+  padding: 12px 16px; 
+  margin-bottom: 24px;
+  font-size: 1rem;
+  color: #2D7EB4;
+  font-family: inherit;
+  outline: none;
+  border-radius: 4px; 
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #000; 
+  box-shadow: 0 0 0 2px rgba(45, 126, 180, 0.2); 
+}
+
+button {
+  align-self: flex-start;
+  padding: 12px 40px;
+  background-color: #2D7EB4;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #144668;
+}
+
+/*ABOUT*/
+.about-container {
+  max-width: 1000px;
+  margin: 100px auto;
+  padding: 0 20px;
+  width: 70%;
+}
+
+.about-content {
+display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  gap: 0px; /* Increase gap for stacked layout */
+}
+
+.about-image {
+  flex: 0 0 300px;
+}
+
+.about-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  margin-top: -80px;
+  flex: 1;
+}
+
+.about-text h1 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 4rem;
+  text-align: left; 
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  font-weight: 300;
+}
+
+
+
 @media (max-width: 768px) {
+
+    .index-bio {
+    width: 80% !important;
+    padding: 60px 20px;
+    margin: 0 auto;
+  }
+  
+  .bio-name {
+    font-size: 1.8rem;
+    margin-bottom: 16px;
+  }
+  
+  .bio-title {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  
+  .bio-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    max-width: 100%;
+  }
+
+.projects-section {
+    width: 90%;
+    margin: 30px auto;
+    padding: 20px 0;
+  }
+  
+  .project-grid {
+    grid-template-columns: 1fr; 
+    gap: 30px;
+  }
+  
+  .project-item {
+    text-align: left;
+  }
+  
+  .project-image {
+    aspect-ratio: 4/3; 
+  }
+  
+  .project-name {
+    font-size: 1.1rem;
+    margin-top: 12px;
+  }
+
   .hero-image-bbm {
     background-image: url('Assets/BBM/Hero/BBM_Mobile_Hero.png');
     height: 350px;
@@ -495,35 +672,80 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
     vertical-align: top;
   }
 
- .nav-links {
+  .nav-links {
     display: none;
   }
 
-  .mobile-nav {
+  .hamburger {
+    display: flex !important; 
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10001;
+    font-size: 28px;
+    color: #2D7EB4;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .hamburger {
     display: flex !important;
+  }
+
+  .hamburger.open {
+    color: white;
+  }
+
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    right: 0; 
+    height: 100vh;
+    width: 100vw;
+    background-color: #2D7EB4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    opacity: 0;
+    transform: translateX(100%); 
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+  }
+
+  .mobile-menu-overlay.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
+  }
+
+  .mobile-nav {
+    display: flex;
     flex-direction: column;
     gap: 24px;
     text-align: center;
     color: white;
   }
 
-  .mobile-nav a{
-    font-weight: 200;
+  .mobile-nav a {
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
   }
 
-  .hamburger {
-    display: flex;
+  .header-container {
+    width: 90%;
+    padding: 0;
+    margin: 30px auto 0 auto;
   }
 
-
-.header-container {
-  width: 90%;
-  padding: 0;
-  margin: 30px auto 0 auto;
-}
-
-.project-info-text {
-  width: 80%;
+  .project-info-text {
+    width: 80%;
     margin: 40px auto;    
     padding: 20px 0px;
   }
@@ -537,7 +759,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
     line-height: 1.4;
   }
 
-   .project-image-background {
+  .project-image-background {
     flex-direction: column; 
     padding: 70px 16px;
     min-height: auto;     
@@ -558,7 +780,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
     margin-top: 10px; 
   }
 
-.paid-social-desktop {
+  .paid-social-desktop {
     display: none !important;
   }
 
@@ -579,11 +801,76 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
     margin: 0 auto;
   }
 
-  .project-image-background-c{
-     padding: 40px 16px;
+  .project-image-background-c {
+    padding: 40px 16px;
     min-height: auto;          
     flex-direction: column;    
     align-items: center; 
+  }
+
+  .contact-container {
+    max-width: 90% !important;
+    margin: 80px auto;
+    width: 90%;
+  }
+  
+  h1 {
+    font-size: 2.6rem;
+    line-height: 3rem;
+    margin-bottom: 40px;
+  }
+  
+  .contact-intro {
+    font-size: 0.95rem;
+  }
+  
+  input,
+  textarea {
+    padding: 10px 12px;
+    font-size: 0.95rem;
+  }
+  
+  button {
+    align-self: stretch; 
+    text-align: center;
+    padding: 12px 20px;
+  }
+
+  .about-container {
+    margin: 60px auto;
+    width: 90%; 
+  }
+  
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+  
+  .about-image {
+    flex: none;
+  }
+  
+  .about-image img {
+    width: 200px; 
+    height: 200px;
+  }
+  
+  .about-text {
+    margin-top: 20px; 
+    text-align: left; 
+  }
+  
+  .about-text h1 {
+    font-size: 1.8rem; 
+    line-height: 2.5rem; 
+    text-align: left; 
+  }
+  
+  .about-text p {
+    font-size: 1rem; 
+    line-height: 1.6;
+    text-align: left;
   }
 
 }
