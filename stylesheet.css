@@ -490,9 +490,9 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
 }
 
 h1 {
-  font-size: 2.7rem;
   margin-bottom: 10px;
-  font-weight: 800;
+    font-size: 1.8rem;
+  font-weight: 500;
   line-height: 4rem;
 }
 
