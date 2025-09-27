@@ -15,9 +15,16 @@
   <header>
     <div class="main-container">
       <div class="header-container">
-        <a href="index.html">
-          <img src="Assets/Logo/Logo.png" alt="Lucy Jacobson Product Designer" class="logo" id="logo">
-        </a>
+<a href="index.html">
+  <img 
+    src="Assets/Logo/StarLogo.png" 
+    alt="Lucy Jacobson Product Designer" 
+    class="logo" 
+    id="logo"
+    onmouseover="this.src='Assets/Logo/StarLogoGif.gif'" 
+    onmouseout="this.src='Assets/Logo/StarLogo.png'"
+  >
+</a>
 
         <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
           <i class="bi bi-list"></i>
@@ -43,24 +50,30 @@
   </header>
 
 <div class="about-container">
-  <div class="about-content">
-    <div class="about-image">
-      <img src="Assets/About/Lucy-Jacobson-Portrait.jpeg" alt="A photo of me and my French Bulldog Oliver">
-    </div>
-    
-    <div class="about-text">
-      <h1>Hi, I'm Lucy</h1>
-      <p>
-        I was born in Nashville, Tennessee, and have been on the move along the East Coast and abroad ever since. At age 7, I drove my pink Barbie Corvette off a ramp, and my love for risk-taking was born (though my Mom and Dad weren’t thrilled). I have a French Bulldog named Oliver, who I love more than anything. I am always happy to share photos of him.
-      </p>
-    </div>
+  <h1 class="about-title">About Me</h1>
+
+  <div class="about-text intro">
+    <p>
+      Hi, I'm Lucy. I was born in Nashville, Tennessee, and have been on the move along the East Coast and abroad ever since. At age 7, I drove my pink Barbie Corvette off a ramp, and my love for risk-taking was born (though my Mom and Dad weren’t thrilled). I have a French Bulldog named Oliver, who I love more than anything. I am always happy to share photos of him.
+    </p>
+  </div>
+
+  <div class="about-images">
+    <img src="Assets/About/Lucy-Jacobson-Portrait.jpeg" alt="Lucy and Oliver">
+    <img src="Assets/About/About-Me.jpeg" alt="Another image of Lucy or Oliver">
+  </div>
+
+  <div class="about-text education">
+    <p>
+      I graduated from the Savannah College of Art and Design with a degree in advertising and branding, and recently got my master’s in interactive digital media from Trinity College Dublin. I’m most proud of designing and launching MUSA, a site that brings Irish Sign Language tours to museums and cultural institutions. Ask me more about it! Feel free to contact me with questions, opportunities, or if you just want to talk design.
+    </p>
   </div>
 </div>
 
   <script src="script.js" defer></script>
 
   <footer class="footer">
-    <img src="Assets/Logo/Logo.png" alt="Footer Logo" class="footer-logo">
+    <img src="Assets/Logo/Star.png" alt="Footer Logo" class="footer-logo">
 
     <div class="footer-links">
       <div class="footer-item">
