@@ -232,6 +232,18 @@ html, body {
   overflow: hidden;
 }
 
+.hero-image-ias {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url('Assets/IAS/Hero/Hero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
 .hero-image-wcf {
   width: 80%;
   height: auto; /* Let the image define height */
@@ -297,7 +309,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   align-items: start; 
 }
@@ -669,6 +681,12 @@ button:hover {
     width: 90%;
   }
 
+   .hero-image-ias {
+    background-image: url('Assets/IAS/Hero/Mobile-hero.png');
+    height: 350px;
+    width: 90%;
+  }
+
   .hero-image-wcf{
         width: 90%;
   }
@@ -893,4 +911,20 @@ button:hover {
     text-align: left;
   }
 
+}
+
+
+
+@media (min-width: 1200px) {
+  .project-info-text-title {
+    font-size: 1.6em; 
+  }
+
+  .project-info-text-body {
+    font-size: 1.1em; 
+  }
+
+  .nav-links a{
+    font-size: 18px;
+  }
 }
