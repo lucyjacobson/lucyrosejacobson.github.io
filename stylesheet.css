@@ -155,6 +155,7 @@ html, body {
   max-width: 1200px;
   margin: 30px auto;
   padding: 20px;
+  justify-content: center;
 }
 
 .project-grid {
@@ -610,7 +611,6 @@ button:hover {
   width: 100%;
 }
 
-
 .about-images {
   display: flex;
   gap: 40px;
@@ -883,6 +883,11 @@ button:hover {
     flex-direction: column;
     align-items: center;
     gap: 0px;
+  }
+
+  .about-images {
+    flex-direction: column;
+
   }
   
   .about-image {
