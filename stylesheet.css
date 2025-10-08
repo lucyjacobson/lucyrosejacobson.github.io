@@ -624,6 +624,29 @@ button:hover {
   border-radius: 10px; 
 }
 
+.grid-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram-grid {
+  width: 90%;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.instagram-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
 
   .logo{
@@ -914,6 +937,16 @@ button:hover {
     font-size: 1rem; 
     line-height: 1.6;
     text-align: left;
+  }
+
+  .grid-container {
+    height: auto; 
+    margin-top: -10px;;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 8px; 
   }
 
 }
