@@ -6,13 +6,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
        <link rel="icon" href="Favicon.png" type="image/png">
-    <title>Contact Me</title>
+    <title>Lucy Jacobson's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
-<header>
+<body>
+  <header>
 
   <div class="main-container">
     <div class="header-container">
@@ -23,10 +24,8 @@
     class="logo" 
     id="logo"
     onmouseover="this.src='Assets/Logo/StarLogoGif.gif'" 
-    onmouseout="this.src='Assets/Logo/StarLogo.png'"
-  >
+    onmouseout="this.src='Assets/Logo/StarLogo.png'">
 </a>
-
 
       <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
     <i class="bi bi-list"></i>
@@ -36,17 +35,17 @@
         <a href="index.html" class="WorkLink">Work</a>
         <a href="about.html">About</a>
         <a href="Assets/Resume/Lucy_Jacobson_Resume.pdf" download>CV</a>
-        <a href="personalwork.html">Personal Work</a>
-        <a href="contact.html"><strong>Contact</strong></a>
+        <a href="personalwork.html"><strong>Personal Work</strong></a>
+        <a href="contact.html">Contact</a>
       </nav>
 
   <div class="mobile-menu-overlay">
   <nav class="nav-links mobile-nav">
-    <a href="index.html" class="WorkLink">Work</a>
+    <a href="index.html" class="WorkLink"><strong>Work</strong></a>
     <a href="about.html">About</a>
     <a href="Assets/Resume/Lucy_Jacobson_Resume.pdf" download>CV</a>
     <a href="personalwork.html">Personal Work</a>
-    <a href="contact.html"><strong>Contact</strong></a>
+    <a href="contact.html">Contact</a>
   </nav>
 </div>
     </div>
@@ -54,33 +53,53 @@
 
 </header>
 
-<body>
 
-<div class="contact-container">
-    <h1>Drop a line, I'd love to hear from you.</h1>
-    <form id="contactForm" action="https://formspree.io/f/xjkakpav" method="POST">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
+ <h1 class="personal-title">Personal Work</h1>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
 
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+<div class="grid-container">
+<div class="instagram-grid">
+      <a href="https://www.instagram.com/p/DPkfQooEeBN/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+    <img src="Assets/About/type.jpg" alt="Image 1">
+  </a>
 
-        <button type="submit">Send</button>
-    </form>
-<div id="formMessage"></div>
+    <a href="https://www.instagram.com/p/DPkaspSkapz/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+    <img src="Assets/About/rodeo.jpg" alt="Image 1">
+  </a>
+
+  <a href="https://www.instagram.com/reel/DPhCM5CEbBY/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+    <img src="Assets/About/jewcysdesigns.png" alt="Image 1">
+  </a>
+
+  <a href="https://www.instagram.com/reel/DPg2iuMEba3/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+    <img src="Assets/About/Swirl.png" alt="Image 2">
+    </a>
+
+    <a href="https://www.instagram.com/reel/DPgyMkmkYwT/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+    <img src="Assets/About/gooutside.png" alt="Image 3">
+    </a>
+
+    <a href="https://www.instagram.com/p/DPKUgFYEZCp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+    <img src="Assets/About/starselection.png" alt="Image 4">
+     </a>
+
+  </div>
+</div>
+
+<div class="see-more-container">
+    <a href="https://www.instagram.com/jewcysdesigns/" target="_blank" rel="noopener noreferrer">
+  <button class="see-more-button">See More</button>
+  </a>
 </div>
 
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="script.js" defer></script>
 
+
+
 <footer class="footer">
-  <a href="index.html">
   <img src="Assets/Logo/Star.png" alt="Footer Logo" class="footer-logo">
-</a>
 
   <div class="footer-links">
     <div class="footer-item">
@@ -100,6 +119,5 @@
   </div>
 </footer>
 
-  <script src="contact.js"></script>
 </body>
 </html>

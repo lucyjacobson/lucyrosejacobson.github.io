@@ -40,7 +40,7 @@ html, body {
 }
 
 .nav-links a {
-  margin-left: 20px;
+  margin-left: 16px;
   color: #2D7EB4;
   text-decoration: none;
   font-size: 16px;
@@ -522,6 +522,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
 }
 
 h1 {
+  font-family: 'Xanh Mono' , 'Serif';
   margin-bottom: 10px;
     font-size: 1.8rem;
   font-weight: 500;
@@ -624,27 +625,57 @@ button:hover {
   border-radius: 10px; 
 }
 
+.personal-title{
+  font-family: 'Xanh Mono' , 'Serif';
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 75px;
+  text-align: center;
+}
+
 .grid-container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  padding: 2rem 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  margin-top: 50px;
 }
 
 .instagram-grid {
   width: 90%;
+  margin: 0 auto;
   display: grid;
-  align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Always 3 columns */
   gap: 10px;
 }
 
 .instagram-grid img {
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 1 / 1; 
   object-fit: cover;
+  display: block;
+}
+
+.see-more-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.see-more-button {
+  align-self: flex-start;
+  padding: 12px 40px;
+  background-color: #2D7EB4;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px; 
+  cursor: pointer;
+  font-weight: 300;
+  transition: background-color 0.2s ease;
+}
+
+.see-more-button:hover {
+  background-color: #144668;      /* Slightly lighter on hover */
 }
 
 @media (max-width: 768px) {
