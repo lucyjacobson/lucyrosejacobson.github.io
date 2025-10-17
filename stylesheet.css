@@ -259,6 +259,17 @@ html, body {
   display: block;
 }
 
+.hero-image-oliver {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url('Assets/Oliver/Hero/OliverHero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
 .project-info-text {
   width: 80%;
@@ -676,6 +687,11 @@ button:hover {
 
 .see-more-button:hover {
   background-color: #144668;      /* Slightly lighter on hover */
+}
+
+.prototype-link{
+  text-decoration: none;
+  color: #2D7EB4;
 }
 
 @media (max-width: 768px) {
