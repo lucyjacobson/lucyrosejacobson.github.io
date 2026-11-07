@@ -14,7 +14,7 @@ html, body {
   width: 100%;
   overflow-x: hidden;
   background-color: #F4F4F4;
-  color: #2D7EB4;
+  color: #1f1f1f;
   padding-top: 0;
 }
 
@@ -41,7 +41,7 @@ html, body {
 
 .nav-links a {
   margin-left: 16px;
-  color: #2D7EB4;
+  color: #1f1f1f;
   text-decoration: none;
   font-size: 16px;
   padding: 4px 12px;
@@ -51,7 +51,7 @@ html, body {
 }
 
 .nav-links a:hover {
-  color: #144668;
+  color: #6A6A6A;
 }
 
 .hamburger {
@@ -61,7 +61,7 @@ html, body {
   cursor: pointer;
   z-index: 10001;
   font-size: 28px;
-  color: #2D7EB4;
+  color: #1f1f1f;
   padding: 5px;
   width: 40px;
   height: 40px;
@@ -71,7 +71,7 @@ html, body {
 
 .hamburger:hover {
   background: transparent !important;
-  color: #144668;
+  color: #6a6a6a;
 }
 
 .hamburger.open {
@@ -84,7 +84,7 @@ html, body {
   right: 0; 
   height: 100vh;
   width: 100vw;
-  background-color: #2D7EB4;
+  background-color: #1f1f1f;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -184,8 +184,8 @@ html, body {
 .project-name {
   margin-top: 16px;
   font-size: 1.2rem;
-  font-weight: 400;
-  color: #2D7EB4;
+  font-weight: 300;
+  color: #1f1f1f;
 }
 
 .project-link {
@@ -222,6 +222,18 @@ html, body {
   letter-spacing: 0.5px;
   display: block;
   margin-bottom: -10px;
+}
+
+.hero-image-ja {
+  width: 80%;
+  height: 500px;
+  margin: 0 auto;
+  background-image: url('Assets/JonathanAdler/Hero/JAHero.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 .hero-image-bbm {
@@ -455,7 +467,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
 }
 
 .footer-item a {
-  color: #2D7EB4;
+  color: #1f1f1f;
   text-decoration: none;
 }
 
@@ -481,7 +493,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
     background: none;
     border: none;
     cursor: pointer;
-    color: #2D7EB4;
+    color: #1f1f1f;
     text-decoration: none;
 }
 
@@ -500,7 +512,7 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
 
 .project-nav-descriptor {
     font-size: 14px;
-    color: #2D7EB4;
+    color: #1f1f1f;
     margin-bottom: 2px;
     transition: color 0.2s ease;
 }
@@ -508,14 +520,14 @@ background: linear-gradient(90deg, #EF5CA0, #FCCB0A);
 .project-nav-name {
     font-size: 16px;
     font-weight: 300;
-    color: #2D7EB4;
+    color: #1f1f1f;
     transition: color 0.2s ease;
 }
 
 .project-nav-btn:hover,
 .project-nav-btn:hover .project-nav-descriptor,
 .project-nav-btn:hover .project-nav-name {
-    color: #144668;
+    color: #6a6a6a;
 }
 
 
@@ -574,12 +586,12 @@ label {
 
 input,
 textarea {
-  border: 1.3px solid #2D7EB4; 
+  border: 1.3px solid #1f1f1f; 
   background: transparent;
   padding: 12px 16px; 
   margin-bottom: 24px;
   font-size: 1rem;
-  color: #2D7EB4;
+  color: #1f1f1f;
   font-family: inherit;
   outline: none;
   border-radius: 4px; 
@@ -595,7 +607,7 @@ textarea:focus {
 button {
   align-self: flex-start;
   padding: 12px 40px;
-  background-color: #2D7EB4;
+  background-color: #1f1f1f;
   color: white;
   font-size: 1rem;
   border: none;
@@ -606,7 +618,7 @@ button {
 }
 
 button:hover {
-  background-color: #144668;
+  background-color: #6a6a6a;
 }
 
 /* ABOUT */
@@ -689,7 +701,7 @@ button:hover {
 .see-more-button {
   align-self: flex-start;
   padding: 12px 40px;
-  background-color: #2D7EB4;
+  background-color: #1f1f1f;
   color: white;
   font-size: 1rem;
   border: none;
@@ -700,12 +712,12 @@ button:hover {
 }
 
 .see-more-button:hover {
-  background-color: #144668;      /* Slightly lighter on hover */
+  background-color: #6a6a6a;      /* Slightly lighter on hover */
 }
 
 .prototype-link{
   text-decoration: none;
-  color: #2D7EB4;
+  color: #1f1f1f;
 }
 
 @media (max-width: 768px) {
@@ -757,6 +769,12 @@ button:hover {
   .project-name {
     font-size: 1.1rem;
     margin-top: 12px;
+  }
+
+  .hero-image-ja {
+    background-image: url('Assets/JonathanAdler/Hero/JA_Mobile_Hero.png');
+    height: 350px;
+    width: 90%;
   }
 
   .hero-image-bbm {
@@ -817,7 +835,7 @@ button:hover {
     cursor: pointer;
     z-index: 10001;
     font-size: 28px;
-    color: #2D7EB4;
+    color: #1f1f1f;
     padding: 5px;
     width: 40px;
     height: 40px;
@@ -839,7 +857,7 @@ button:hover {
     right: 0; 
     height: 100vh;
     width: 100vw;
-    background-color: #2D7EB4;
+    background-color: #1f1f1f;
     display: flex;
     flex-direction: column;
     justify-content: center;
